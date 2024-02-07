@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Altiti</title>
+ <Script src="jquery-3.7.1.min.js"> </Script>
+
+ <style>  
+    *{box-shadow: 0;}
+  #p1{
+    width: 250px;
+    padding: 40px 0;
+    font-size: 15px;
+    text-align: center;
+    background: blue;
+    border: 3px solid black;
+    box-sizing: border-box;
+  }
+
+ </style>
+ <script>
+  $(function () {
+   
+      
+
+    $("#J2").click(function () {
+
+  $("#p1").animate({ width: "100%" })
+        
+    .animate({ fontSize: "40px" })
+
+    .animate({ borderWidth: "30px" })
+
+    $(".reset").click(function(){
+          $("p").removeAttr("style");
+
+         });
+    });
+});
+
+ </script>
+</head>
+<body>
+  <p id="p1" >Welcome to Abdullah Altiti</p>
+  <button id="J2" >Start chinging</button>
+  <button type="button" class="reset">Reset</button>
+
+</body>
+</html>
